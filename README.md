@@ -98,6 +98,6 @@ ENTRYPOINT [ "java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app.ja
 ```
 
 **备注：**  
-1.用户只需执行mvn package ，就会自动执行mvn docker:build,然后执行上面的第一个运行镜像命令就可以  
-2.用idea运行dockerfile，执行第二个命令就可以打包并且运行（打包之前运行的是mvn install命令）
-3.需要注意docker服务器的缓存，插件的权限，dockerfile文件的位置，maven插件的版本等等，反正挺麻烦的...
+1.第一种运行方式。用户只需在idea执行mvn package ，就会自动执行mvn docker:build,然后执行idea上面的第一个运行镜像命令就可以  
+2.第二种运行方式。直接在idea运行dockerfile，就是在idea执行第二个命令就可以打包并且运行（打包之前运行的是mvn install命令）
+3.注意事项：需要注意docker服务器的缓存，插件的权限，dockerfile文件的位置，maven插件的版本等等，反正挺麻烦的...
