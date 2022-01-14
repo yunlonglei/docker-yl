@@ -29,7 +29,7 @@ public class HelloController {
      */
     @GetMapping("hello")
     public String hello1() {
-        System.out.println(Arrays.toString(applicationArguments.getSourceArgs()));
+        log.info("启动类传的参数「{}」",Arrays.toString(applicationArguments.getSourceArgs()));
         log.info("访问hello接口=====");
         return "hello, Add CI / CD here in docker,thanks!4 ";
     }
