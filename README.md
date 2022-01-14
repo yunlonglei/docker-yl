@@ -1,5 +1,5 @@
 # docker_yl
-集成Docker的一个简单练习项目，将上传github
+集成Docker的一个简单练习项目，版本可能老旧，在后续版本中会加以修改。
 ## docker运行命令
 * 运行一个镜像，来生成一个容器（在用maven插件运行的时候maven会自动上传docker镜像，我们只需要启动就好）  
 ```docker
