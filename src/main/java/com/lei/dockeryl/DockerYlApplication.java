@@ -1,4 +1,4 @@
-package com.lsjt.dockeryl;
+package com.lei.dockeryl;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,7 +11,7 @@ import java.util.Arrays;
 @SpringBootApplication
 public class DockerYlApplication {
     /**
-     * 启动类传参： java -jar docker_yl.jar username=root
+     * 启动类传参： java -jar docker-yl.jar username=root
      * @param args
      */
     public static void main(String[] args) {
