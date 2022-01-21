@@ -8,10 +8,10 @@
         <version>2.3.3.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.lsjt</groupId>
-    <artifactId>docker_yl</artifactId>
+    <groupId>com.lei</groupId>
+    <artifactId>docker-yl</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>docker_yl</name>
+    <name>docker-yl</name>
     <description>集成Docker的一个HelloWolrd练习项目，将上传github</description>
 
     <properties>
@@ -63,7 +63,7 @@
                     <skipTests>true</skipTests>
                 </configuration>
             </plugin>
-            <!--使用docker-maven-plugin插件-->
+            <!-- 使用docker-maven-plugin插件，如果使用idea的docker插件就屏蔽下面的plugin -->
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
@@ -84,7 +84,7 @@
                     <imageName>leiyunlong/${project.artifactId}</imageName>
                     <!--指定标签-->
                     <imageTags>
-                        <imageTag>latest</imageTag>
+                        <imageTag>${project.version}</imageTag>
                     </imageTags>
                     <!-- 指定 Dockerfile 路径-->
                     <dockerDirectory>${project.basedir}</dockerDirectory>
